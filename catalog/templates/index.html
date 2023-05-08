@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог услуг</title>
+</head>
+<body>
+{% if ServiceList %}
+<div class="services-table">
+    <div class="services-table-header">
+        <div class="service-name"><p>Услуга</p> </div>
+        <div class="service-price"><p>Цена</p></div>
+        <div class="service-photo"><p>Фото</p></a> </div>
+    </div>
+    {% for service in ServiceList %}
+        <div class="service-row">
+            <div class="service-name"><a href="/catalog/{{ service.id }}/">{{  service.Name }}</a> </div>
+            <div class="service-price"><p>{{  service.Price }}</p></div>
+            <div class="service-photo"><a href="/catalog/{{ service.id }}/"><img src="{{ service.Photo.url }}"></a> </div>
+        </div>
+    {% endfor %}
+</div>
+{% else %}
+    <div class="no-services-defined"><p>Услуги не определены</p></div>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ service.Name }}</title>
+</head>
+<body>
+<div class="service-full">
+    <div class="service-description"><p>{{ service.Description }}</p></div>
+    <div class="service-photo"><img src="{{ service.Photo.url }}"></div>
+    <div class="service-price"><p>{{ service.Price }}</p></div>
+    <div class="service-duration"><p>{{ service.Duration }}</p></div>
+</div>
+</body>
+</html>
