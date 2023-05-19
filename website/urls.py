@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls.static import static
 from django.conf import settings
+from . import views
 urlpatterns = [
-    path("", include("catalog.urls")),
+    path("", views.home, name="home"),
     path("catalog/", include("catalog.urls")),
     path("admin/", admin.site.urls),
-    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("about/", views.aboutUs, name='aboutUs'),
+    path("login/", include("login.urls"))
+    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
