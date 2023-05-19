@@ -1,4 +1,4 @@
-<h1 align="center">Audit Firm</h1>
+<h1 align="center">Beauty Bar</h1>
 
 ## Главная
 
