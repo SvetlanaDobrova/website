@@ -1,17 +1,20 @@
 .login-container {
   width: 100%;
   display: flex;
-  overflow: auto;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  background-size: cover;
+  background-image: url("/static/screenshot-1500w.png");
+  padding: 50px;
 }
 .login-container1 {
   flex: 0 0 auto;
-  width: 200px;
+  width: 20%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+    margin: 10%;
 }
 .login-login-container {
   flex: 0 0 auto;
@@ -19,10 +22,11 @@
   height: 100px;
   display: flex;
   align-items: flex-start;
+    margin: 10%;
 }
 .login-userid-container {
   flex: 0 0 auto;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: flex-start;
 }
@@ -61,23 +65,28 @@
   flex-direction: column;
 }
 .login-container6 {
-  flex: 0 0 auto;
-  width: 100%;
+  flex: 1 auto;
+  width: 90%;
   height: 100px;
   display: flex;
   align-items: flex-start;
+  padding: 20px;
+}
+. {
+  padding: 20px;
+  border-radius: 30px;
 }
 @media(max-width: 1600px) {
   .login-container1 {
     width: 30%;
     height: auto;
     margin: var(--dl-space-space-sixunits);
-    padding: 2%;
+    padding: 10%;
     align-items: center;
-    border-radius: 60px;
+    border-radius: 70px;
     flex-direction: column;
     justify-content: center;
-    background-image: radial-gradient(circle at center, rgb(189, 195, 199) 0.00%,rgb(223, 203, 183) 100.00%);
+    background-color: rgba(221, 160, 221, 0.3);
   }
   .login-login-container {
     align-self: center;
@@ -88,13 +97,15 @@
     font-style: normal;
     text-align: center;
     font-family: Noto Sans;
-    font-weight: 400;
+    font-weight: 200;
   }
   .login-userid-container {
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: 10px;
+    border-radius: 30px;
   }
   .login-container2 {
     width: 40%;
+    margin: 10%;
   }
   .login-text1 {
     width: 100%;
@@ -150,5 +161,6 @@
     text-align: center;
     font-family: Noto Sans;
     font-weight: 300;
+    border-radius: 20%;
   }
 }

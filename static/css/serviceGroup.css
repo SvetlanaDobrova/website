@@ -1,0 +1,120 @@
+
+.service-container:hover {
+      transform: scale(1.1); /* Увеличиваем масштаб */
+
+}
+@media (max-width: 1600px) {
+      .name-main-text {
+      width: 100%;
+      text-transform: uppercase;
+      height: 20%;
+      font-size: 40px;
+      align-self: center;
+      font-style: normal;
+      text-align: center;
+      font-family: Noto Sans;
+      font-weight: 200;
+      }
+.serviceList{
+      width: 100%;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      background-image: url("/static/screenshot-1500w.png");
+
+}
+.service-container {
+      width: 50%;
+      height: max-content;
+    padding: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.5s; /* Время эффекта */
+      border-bottom: #0000;
+    border-radius: 40px;
+
+}
+.service-Name{
+    width: 100%;
+    font-size: 30px;
+    align-self: normal;
+    font-style: normal;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 200;
+    height: 30px;
+    margin-bottom: 30px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;}
+summary {
+   display: flex;
+   padding: .3em .5em .3em .4em;
+   font-size:1.4em;
+   cursor: pointer;
+    align-content: center;
+}
+summary:before {
+  content: "•";
+  margin-right: .3em;
+}
+details[open] > summary:before {
+  content: "―";
+}
+summary ~ * {
+   padding:0 1em 0 1em;
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+details{
+  display:flex;
+  margin-bottom: .5rem;
+  align-items: center;
+    align-content: center;
+}
+.service-Description{
+    font-size: 20px;
+    align-self: normal;
+    font-style: normal;
+    text-align: center;
+    font-family: Noto Sans;
+    font-weight: 200;
+    margin: 1%;
+}
+.service-photo{
+      width: 300px;
+      height: 400px;
+      align-items: center;
+      object-fit: contain;
+      display:block;
+      margin:auto;
+}
+
+.service-price {
+      font-size: 25px;
+      align-self: center;
+      font-style: normal;
+      text-align: center;
+      font-family: Noto Sans;
+      font-weight: 200;
+      margin: 10px;
+}
+.mainn{
+    width: 80%;
+}
+.s-back {
+  flex: 0 0 auto;
+  width: 10%;
+  align-items: flex-start;
+  vertical-align: middle;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 200;
+    display: flex;
+}
+}
