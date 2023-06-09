@@ -96,16 +96,25 @@
             <form method="post" action="{% url 'aboutUs' %}">
                 {% csrf_token %}
                 {{ feedbackForm }}
-                <input type="submit" value="Отправить">
+                <div class="send"> <input type="submit" value="Отправить" style="
+                font-size: 14px;
+                  font-style: normal;
+                  text-align: center;
+                  margin: 1%;
+                  padding: 1%;
+                  font-family: Noto Sans;
+                  font-weight: 300;"></div>
             </form>
         </div>
         <div class="feedback-scroll">
+                        <p>Отзывы</p>
             {% for feedback in feedbacks %}
                 <div class="feedbackEntry">
-                        <p>{{ feedback.Username }}</p>
-                        <p>{{ feedback.Rating }}</p>
-                        <p>{{ feedback.Text }}</p>
-                        <p class="date">{{ feedback.feedbackDate|date:"M d, Y" }}</p>
+
+                    <div class ="Name"> <p>{{ feedback.Username }}</p></div>
+                        <div class="Rating"> <p>{{ feedback.Rating }}</p></div>
+                       <div class="Text"> <p>{{ feedback.Text }}</p></div>
+                        <div class="Date"><p>{{ feedback.feedbackDate|date:"M d, Y" }}</p></div>
 
                 </div>
 

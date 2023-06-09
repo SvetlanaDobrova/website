@@ -52,7 +52,7 @@
   color: rgba(0, 0, 0, 1);
   height: auto;
   font-size: 36px;
-  font-style: Light;
+  font-style: normal;
   text-align: center;
   font-family: Noto Sans;
   font-weight: 300;
@@ -75,7 +75,7 @@
   height: auto;
   font-size: 16px;
   align-self: center;
-  font-style: ExtraLight;
+  font-style: normal;
   text-align: center;
   font-family: Work Sans;
   font-weight: 200;
@@ -241,6 +241,7 @@
   justify-content: center;
   background-color: rgba(241, 231, 231, 1);
   cursor: pointer;
+  transition: 0.3s;
 }
 .home-text09 {
   color: rgba(0, 0, 0, 1);
@@ -255,8 +256,11 @@
   text-decoration: none;
   cursor: pointer;
 
-}
 
+}
+.home-frame1:hover{
+  transform: scale(1.2);
+}
 .home-imageright {
   width: 25%;
   height: auto;
@@ -265,76 +269,8 @@
   margin-right: 30%;
 
 }
-/*
-.home-social-bar {
-  width: 40%;
-  position: center;
-  display: flex;
 
-  justify-content: center;
-}
-.home-icon {
-  width: 3%;
-  height: 3%;
-  margin-right: 50px;
-}
-.home-icon02 {
-   width: 3%;
-   height: 3%;
-  margin-right: 50px;
-}
-.home-icon04 {
-   width: 3%;
-   height: 3%;
-  margin-right: 50px;
-}
-.home-icon06 {
-   width: 3%;
-   height: 3%;
-  margin-right:50px;
-}
-.home-icon08 {
-   width: 3%;
-   height: 3%;
-  margin-right: 50px;
-}
-*/
-@media(max-width: 767px) {
-  .home-social-bar {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
-}
-@media(max-width: 479px) {
-  .home-social-bar {
-    padding-top: var(--dl-space-space-twounits);
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-twounits);
-  }
 
-.social {display: inline-block;}
-.social a {
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin: 0 10px 10px 0;
-	text-align: center;
-	color: #000;
-	background: #fff;
-	border: 1px solid #ccc;
-	border-radius: 24px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
-}
-.social a:hover {color: #fff;}
-.social svg {
-	margin-top: 7px;
-	width: 32px;
-	height: 32px;
-}
-.instagram a:hover {background: #3f729b;}
-.telegram a:hover {background: #249bd7;}
-.vk a:hover {background: #4a76a8;}
-.whatsapp a:hover {background: #50b154;}
 
-}
+
+

@@ -51,7 +51,7 @@ def entry(request):
             newContact.contactTimeStamp = datetime.now()
             newContact.save()
             error_text = "сохранено"
-            return redirect('entrySuccess')
+            return redirect('home')
         else:
             error_text = "Ошибка!"
     else:

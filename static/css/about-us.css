@@ -117,4 +117,101 @@
 .gain-center:hover {
   transform: scale(1.5); /* Увеличиваем масштаб */
 }
+.feedback-scroll{
+  width:50%;
+  height: 300px;
+  font-size: 16px;
+  font-style: normal;
+  display: compact;
+  text-align: center;
+  overflow: auto;
+  position: center;
+  font-family: Noto Sans;
+  font-weight: 200;
+  margin: 3%;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: rgba(220, 190, 120, 0.1);
+  border-bottom: #0000;
+  border-bottom-width: medium;
+  border-radius: 40px;
+
+}
+.Name {
+  width:100%;
+  height: 25%;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-family: Noto Sans;
+  font-weight: 200;
+  padding: 5%;
+
+}
+.Rating{
+  width:100%;
+  height: 25%;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-family: Noto Sans;
+  font-weight: 200;
+  padding: 5%;
+}
+.Text{
+  width:100%;
+  height: 25%;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-family: Noto Sans;
+  font-weight: 200;
+  padding: 5%;
+
+
+}
+.Date{
+  width:100%;
+  height: 25%;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-family: Noto Sans;
+  font-weight: 200;
+  padding: 5%;
+
+}
+.feedbackEntry{
+  width:90%;
+  height:100%;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+
+  font-family: Noto Sans;
+  font-weight: 200;
+  margin: 3%;
+  padding: 20px;
+  background-color: rgba(220, 190, 120, 0.1);
+  border-bottom: #0000;
+  border-bottom-width: medium;
+  border-radius: 40px;
+}
+.feedbackform{
+  width:90%;
+  height:100%;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+
+  font-family: Noto Sans;
+  font-weight: 200;
+  margin: 3%;
+  padding: 20px;
+  background-color: rgba(220, 190, 120, 0.1);
+  border-bottom: #0000;
+  border-bottom-width: medium;
+  border-radius: 40px;
+}
+
 }

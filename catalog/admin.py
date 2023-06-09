@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.template.defaultfilters import linebreaksbr
+
 from .models import BeautyService, BeautyServiceGroup, Feedback, Contacts
 
 # Register your models here.

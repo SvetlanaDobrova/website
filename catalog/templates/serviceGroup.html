@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
       <link href="{% static  'css/serviceGroup.css'%}" rel="stylesheet" />
-
+{{ post.actual_post|safe }}
 
 <div class="serviceList"> <!-- все услуги одной группы -->
       <div class="name-main-text"><p>{{ serviceGroup.Name }}</p></div>

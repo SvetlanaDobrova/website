@@ -8,7 +8,7 @@ class feedbackForm(forms.ModelForm):
         labels = {
             "Username": "Имя",
             "Rating": "Рейтинг",
-            "Text": ""
+            "Text": "Отзыв"
         }
     '''
     userContactData = forms.CharField(label="Телефон", max_length=20)

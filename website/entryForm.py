@@ -5,6 +5,10 @@ class entryForm(forms.ModelForm):
     class Meta:
         model = Contacts
         exclude = ['contactTimeStamp']
+        labels = {
+        "userName": "Имя",
+        "userContactData": "Номер телефона"
+             }
 
     '''
     userContactData = forms.CharField(label="Телефон", max_length=20)

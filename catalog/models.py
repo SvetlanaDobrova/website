@@ -1,5 +1,5 @@
 from django.db import models
-
+from django import forms
 import catalog
 
 
@@ -29,6 +29,6 @@ class Feedback(models.Model):
     feedbackDate = models.DateTimeField(    )
 
 class Contacts(models.Model):
-    userContactData = models.CharField(max_length=50)
+    userContactData = models.CharField( max_length=50)
     userName = models.CharField(max_length=40)
     contactTimeStamp = models.DateTimeField()
